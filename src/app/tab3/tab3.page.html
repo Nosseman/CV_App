@@ -1,9 +1,73 @@
 <ion-header>
-  <ion-toolbar>
+    <ion-toolbar color="primary">
+      <!--Menu bar-->
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons> 
+      <!--Logout icon and function-->
+      <ion-buttons slot="end">
+        <ion-button (click)="logout()">
+          <ion-icon slot="icon-only" name="log-out"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
     <ion-title>
-      Tab Three
+      My Contacts
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+
+  <!--I'll add the contact infos as separate cards
+  Also using at the moment only fake info because don't want to have my contact information
+leaking to the internet-->
+    <ion-card color="dark">
+        <ion-card-header>
+          <ion-card-title>LinkedIn</ion-card-title>
+        </ion-card-header>
+        <ion-item>
+          <ion-card-content>
+            <ion-icon name="logo-linkedin" slot="start" size="large"></ion-icon>
+            <p>https://www.linkedin.com/********</p>
+          </ion-card-content>
+        </ion-item>
+    </ion-card>
+
+    <ion-card color="tertiary">
+        <ion-card-header>
+          <ion-card-title>GitHub</ion-card-title>
+        </ion-card-header>
+        <ion-item>
+          <ion-card-content>
+            <ion-icon name="logo-github" slot="start" size="large"></ion-icon>
+            <p>https://github.com/Nosseman</p>
+          </ion-card-content>
+        </ion-item>
+    </ion-card>
+
+    <ion-card color="success">
+        <ion-card-header>
+          <ion-card-title>Email</ion-card-title>
+        </ion-card-header>
+        <ion-item>
+          <ion-card-content>
+            <ion-icon name="mail" slot="start" size="large"></ion-icon>
+            <p>email@email.com</p>
+          </ion-card-content>
+        </ion-item>
+    </ion-card>
+
+    <ion-card color="danger">
+        <ion-card-header>
+          <ion-card-title>Mobile</ion-card-title>
+        </ion-card-header>
+        <ion-item>
+          <ion-card-content>
+            <ion-icon name="call" slot="start" size="large"></ion-icon>
+            <p>+358XXXXXXX</p>
+        </ion-card-content>
+        </ion-item>
+    </ion-card>
+
+</ion-content>

@@ -1,0 +1,143 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <!--Menu bar-->
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons> 
+      <!--Logout icon and function-->
+      <ion-buttons slot="end">
+        <ion-button (click)="logout()">
+          <ion-icon slot="icon-only" name="log-out"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  
+      <ion-title>
+        Extra Curriculum
+      </ion-title>
+      
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+<!--Here a will show my extra curriculum studies as a list
+Separate sections for already completed and future-->
+    <ion-list>
+      <ion-list-header color="success">
+        <b><h1>Previous studies</h1></b>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>
+          <h2>Basics of Linux OS</h2>
+          <h3>5 Credits</h3>
+          <p>Basic and advanced use.</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <h2>Fundamentals of Software Testing</h2>
+          <h3>5 Credits</h3>
+          <p>ISTQB certificate material.</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>
+            <h2>Software Testing</h2>
+            <h3>5 Credits</h3>
+            <p>Further developing skills</p>
+          </ion-label>
+        </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <h2>Systems Security</h2>
+          <h3>5 Credits</h3>
+          <p>CISPP material.</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>
+            <h2>Designing User Interfaces</h2>
+            <h3>5 Credits</h3>
+            <p>Practices of UI and UX design.</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>
+              <h2>User Centric Design in Digital Services</h2>
+              <h3>5 Credits</h3>
+              <p>Modeling app based on user research.</p>
+            </ion-label>
+          </ion-item>
+
+      <ion-item>
+          <ion-label>
+            <h2>Modeling a Digital Service</h2>
+            <h3>5 Credits</h3>
+            <p>User testing of a prototype app.</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>
+              <h2>Object programming with Java</h2>
+              <h3>5 Credits</h3>
+              <p>Further developing skills.</p>
+            </ion-label>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>
+                <h2>International networking</h2>
+                <h3>5 Credits</h3>
+                <p>IoT project in co-operation with Coventry University.</p>
+              </ion-label>
+            </ion-item>
+
+      </ion-list>
+
+      <!--Here is the list for future studies-->
+      <ion-list>
+          <ion-list-header color="warning">
+            <b><h1>Future studies</h1></b>
+          </ion-list-header>
+      
+          <ion-item>
+            <ion-label>
+              <h2>Android app development</h2>
+              <h3>5 Credits</h3>
+              <p>Developing Android app with Kotlin.</p>
+            </ion-label>
+          </ion-item>
+
+          <ion-item>
+              <ion-label>
+                <h2>Basics of Python</h2>
+                <h3>3 Credits</h3>
+                <p>Broading my programming skills.</p>
+              </ion-label>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>
+                  <h2>Basics of C#</h2>
+                  <h3>3 Credits</h3>
+                  <p>To target native iOS app developing.</p>
+                </ion-label>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label>
+                    <h2>JavaScript study unit</h2>
+                    <h3>5 Credits</h3>
+                    <p>Gaining more competence.</p>
+                  </ion-label>
+                </ion-item>
+
+          </ion-list>
+
+</ion-content>

@@ -1,0 +1,62 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <!--Menu bar-->
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons> 
+      <!--Logout icon and function-->
+      <ion-buttons slot="end">
+        <ion-button (click)="logout()">
+          <ion-icon slot="icon-only" name="log-out"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  
+      <ion-title>
+        Team Projects
+      </ion-title>
+      
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    
+<!--I'm going to use the slider to present the team projects-->
+<!--Had some problems with the images and headers so it's not looking as good as I intended-->
+  <ion-slides>
+
+      <ion-slide>
+        <!--Here had some problems with pictures and headers so these should be added in the future-->
+          <p>
+          An Internet of Things project done in co-operation
+          with the Coventry University. We got a toolkit with 
+          different components and we needed to figure out how
+          to connect the different components and get date from them. 
+          The final task was to design a service or product around
+          the assembled kit.</p>
+      </ion-slide>
+  
+      <ion-slide>
+<!--Here had some problems with pictures and headers so these should be added in the future-->
+        <p>
+          A control panel Java battleship software game. Done in the 
+          basics of Java programming study unit. The computer randomly 
+          positions the ships on the playboard and player tryes to destroy
+          them by giving coordinates. Game ends when all ships are destroyed.
+           Object oriented programming used.
+        </p>
+      </ion-slide>
+  
+      <ion-slide>
+        <!--Here had some problems with pictures and headers so these should be added in the future-->
+        <p>
+          A prototype application made for Tuudo. The assignment was to come up
+          with a new part for Tuudo app that would allow students to publish their 
+          works within the Tuudo app.
+          <br><br>
+          With the prototype we were also required to do some user testing using a 
+          functional prototype.
+        </p>>
+      </ion-slide>
+    </ion-slides>
+    
+  </ion-content>

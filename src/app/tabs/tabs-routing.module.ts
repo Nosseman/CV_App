@@ -4,7 +4,12 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
+    redirectTo: '/members/tab1',
+    pathMatch: 'full'
+  },
+  {
+    path: '',
     component: TabsPage,
     children: [
       {
@@ -38,16 +43,26 @@ const routes: Routes = [
         ]
       },
       {
-        path: '',
-        redirectTo: '/tabs/tab1',
-        pathMatch: 'full'
+        path: 'extra',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../extra/extra.module').then(m => m.ExtraPageModule)
+          }
+        ]
+      },
+      {
+        path: 'project',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../project/project.module').then(m => m.ProjectPageModule)
+          }
+        ]
       }
     ]
-  },
-  {
-    path: '',
-    redirectTo: '/tabs/tab1',
-    pathMatch: 'full'
   }
 ];
 

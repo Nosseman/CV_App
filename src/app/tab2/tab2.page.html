@@ -1,9 +1,98 @@
 <ion-header>
-  <ion-toolbar>
+    <ion-toolbar color="primary">
+      <!--Menu bar-->
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons> 
+      <!--Logout icon and function-->
+      <ion-buttons slot="end">
+        <ion-button (click)="logout()">
+          <ion-icon slot="icon-only" name="log-out"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      
     <ion-title>
-      Tab Two
+      CV
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+<!--I'll use the cards again because I think they work pretty well on this kind of app-->
+    <ion-card color="success">
+      <ion-card-header>
+        <ion-card-title>Education</ion-card-title>
+      </ion-card-header>
+        <ion-item>
+          <ion-card-content>
+            <h2><b>Laurea UAS</b></h2>
+            <i><h3>Since 2018</h3>
+            <h3>Business Information Technology</h3></i>
+            <br>
+            <p>
+              Started my studies in autumn of 2018. I have progressed with my studies very fast and am currently at 
+              the speed of graduating in the end of 2020. In addittion to the compulsory studies I have choosen to 
+              focus my studies on application development on mobile devices and desktops. Also a deep understanding of 
+              user interface design has been earned thanks to various studies including the subject and prototyping.
+            </p>
+            <br>
+            <br>
+            <h2><b>Haaga-Helia UAS</b></h2>
+            <i><h3>2011-2014</h3>
+            <h3>Service Business Management</h3></i>
+            <br>
+            <p>
+              My extra curriculum studies involved logistics, international trade, business law and entrepreneurship.
+              Thanks to these studies I have a deep understanding of the business side also.
+            </p>    
+          </ion-card-content>
+        </ion-item>
+    </ion-card>
+
+    <ion-card color="tertiary">
+        <ion-card-header>
+          <ion-card-title>Job</ion-card-title>
+        </ion-card-header>
+          <ion-item>
+            <ion-card-content>
+                <h2><b>Posti Group Oyj</b></h2>
+                <i><h3>Since 2008</h3>
+                <h3>Postal worker</h3></i>
+                <br>
+                <p>
+                  In my previous job I have learned to be a great team worker and always be ready to help others. 
+                  In this job I have witnessed the effects of technological advancement to traditional non-technical fields.
+                </p>    
+            </ion-card-content>
+        </ion-item>
+    </ion-card>
+
+    <ion-card color="warning">
+        <ion-card-header>
+          <ion-card-title>Skills</ion-card-title>
+        </ion-card-header>
+          <ion-item>
+            <ion-card-content>
+                <h2><b>Technical skills</b></h2>
+                <br>
+                <p>
+                  During my studies I have really got passionate about programming with different languages. Mobile
+                  app development is very close to my heart. I am quite experienced at creating apps using Ionic 4 
+                  framework and Angular routing. I have started my programmings with Java so am also very familiar with
+                  that and JavaScript.
+                  <br>
+                  Besides programming skills I also have a deep understanding of UI and UX design
+                </p>
+                <br>
+                <br>
+                <h2><b>Other skills</b></h2>
+                <br>
+                <p>
+                  I have great team working skills but at the same time I can also work alone. Always wanting to 
+                  advance my skills! 
+                </p>
+            </ion-card-content>
+        </ion-item>
+    </ion-card>
+
+</ion-content>
